@@ -68,6 +68,7 @@ class Stopwatch extends Component {
     return (
       <Col sm={4} md={4} className="m-2 text-center bordered stopwatch">
         <Image src={Stopwch} fluid />
+        <hr />
         <h2>Stopwatch</h2>
         <h3>
           {this.state.minutes === 0 &&

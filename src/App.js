@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import NavBar from "./components/navbar";
 import Intro from "./components/intro";
 import Stopwatch from "./components/stopwatch";
+import ToDo from "./components/todo";
 import Counters from "./components/counters";
 import Abacus from "./img/abacus.png";
 import "./App.css";
@@ -75,6 +76,7 @@ class App extends Component {
           <Row>
             <Col sm={4} md={4} className="m-2 text-center bordered">
               <Image src={Abacus} fluid />
+              <hr />
               <h2>Counter</h2>
               <button
                 onClick={this.handleAdd} // hezci a kratsi zapis
@@ -91,6 +93,7 @@ class App extends Component {
             </Col>
 
             <Stopwatch />
+            <ToDo />
           </Row>
         </Container>
       </React.Fragment>
